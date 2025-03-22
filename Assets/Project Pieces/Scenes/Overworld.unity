@@ -255,6 +255,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9327248}
   m_CullTransparentMesh: 1
+--- !u!1 &21574176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7683675683740200286, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
+  m_PrefabInstance: {fileID: 598651805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &21574177
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21574176}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eb5f1376bcf5fc5428514928ab0d7a11, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &21786097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,6 +2826,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6570263848875674830, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1998927198, guid: a01fdf74548add548ad8a659bd676d53, type: 3}
+    - target: {fileID: 6570263848875674830, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
@@ -2817,10 +2847,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1828355989677323385, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1796898154}
+      addedObject: {fileID: 1796898149}
     - targetCorrespondingSourceObject: {fileID: 1828355989677323385, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1796898149}
+      addedObject: {fileID: 1796898154}
+    - targetCorrespondingSourceObject: {fileID: 7683675683740200286, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 21574177}
   m_SourcePrefab: {fileID: 100100000, guid: 7c7645e5d0cb8cf4bb8be56bc87ebf77, type: 3}
 --- !u!1 &619394800
 GameObject:
@@ -88533,6 +88566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd8b226a479ccc4cb739b73575f6991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 21574177}
   moveVector: {x: 0, y: 0}
   moveSpeed: 3
   sprintMultiplier: 2
